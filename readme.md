@@ -44,11 +44,13 @@ This creates a more complex plot where each dice combination has been separated 
 
 **single weapon average damage** - **two weapon fighting average damage**
 
-i.e. positive numbers indicate how much more damage a single weapon attack does, when compared to attacking twice with a pair of the same weapons
+i.e. positive numbers indicate how much more damage attacking twice with a weapon  does when compared to attacking with a single weapon
 
-PLOT GOES HERE
+![Two weapon advantage](/IMG/two_weapon_fighting.png)
 
 n.b. a limited number or weapon bonuses have been plotted, covering only those listed in the basic equipment list.
+
+As you can see from the plots, Two weapon fighting is seldom worth it in Fabula Ultima, as the Two weapon fighting advantage is only positive for incredibly low difficulties. You are better served by equipping a higher damage two-handed weapon or gaining the defence boost from a shield.
 
 ---
 
