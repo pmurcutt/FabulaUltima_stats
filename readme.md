@@ -24,11 +24,42 @@ This shows that although dice pairs with the same total are equivalent for ***su
 
 ## Two weapon fighting
 
-TODO
+Fabula Ultima allows you to play fight with the same type of one-handed weapon in each hand. In this case a separate attack is made for each weapon, but the highroll for each is always condidered 0 (simply dealing the weapons' base damage on a hit).
+
+The damage done by a conventional attack is:
+**chance to hit** * (**high roll** + **base weapon damage**)
+
+The damage done by Two weapon fighting is:
+**chance to hit** * **base weapon damage** * **2**
+
+There are now many factors:
+- Chance to hit, which depends on:
+  - Dice pair
+- High roll, which depends on:
+  - Dice pair
+  - Success threshold
+- Weapon base damage
+
+This creates a more complex plot where each dice combination has been separated out and the difference between using a single weapon and adding the high roll or making multiple attacks with two of said weapon are better. The Y axis represents:
+
+**single weapon average damage** - **two weapon fighting average damage**
+
+i.e. positive numbers indicate how much more damage a single weapon attack does, when compared to attacking twice with a pair of the same weapons
+
+PLOT GOES HERE
+
+n.b. a limited number or weapon bonuses have been plotted, covering only those listed in the basic equipment list.
 
 ---
 
 ## Alchemist
 
-TODO
+The Tinkerer class offers the *Gadgets* skill. One of the options within this skill is to specialise in Alchemy. This is represented by two tables that detail:
+1) The **target** of your potion
+2) The **effect** of your potion
 
+When making a potion, you roll a number of D20s based on your Alchemy skill and how many Inventory points you are willing to spend (2, 3 or 4 D20s). You then assign one of the D20s to each table to create the potion, then apply those effects. You always have the option to apply a healing effect or some poison damage.
+
+The chart below shows the odds of achieving the various outcomes based on the number of D20s rolled (2, 3 or 4):
+
+PLOT GOES HERE
