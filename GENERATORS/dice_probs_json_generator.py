@@ -47,8 +47,8 @@ def generate_FabUlt_dice_odds(dice_sizes):
             cumulative_probability[d1size][d2size][0] = cumulative_probability[d1size][d2size][25]
             cumulative_probability[d1size][d2size][25] = 0
             for i in range(len(results_probability[d1size][d2size])):
-                roll_sum += results_probability[d1size][d2size][i]
                 cumulative_probability[d1size][d2size][i] = 1 - roll_sum
+                roll_sum += results_probability[d1size][d2size][i]
 
     with open('../JSON/FabUlt_dice_cumulative.json', 'w') as file:
         json.dump(cumulative_probability, file, indent=4)
