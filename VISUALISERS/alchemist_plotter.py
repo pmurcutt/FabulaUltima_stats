@@ -30,7 +30,7 @@ def plot_alchemist_odds(alchemist_odds):
 
     plt.xticks(fontsize=6, rotation='vertical', )
     plt.subplots_adjust(left=0.1, right=0.98, bottom=0.27, top=0.95, wspace=0.1, hspace=0.5)
-    plt.savefig('../IMG/alchemist.png', dpi=500)
+    plt.savefig('../IMG/alchemist.png', dpi=960)
     plt.show()
 
 
