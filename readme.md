@@ -1,0 +1,1 @@
+This repo contains python tools to analyse and visualise the odds of the various dice rolls in the JTTRPG
