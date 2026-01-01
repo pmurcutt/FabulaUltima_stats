@@ -64,4 +64,4 @@ When making a potion, you roll a number of D20s based on your Alchemy skill and 
 
 The chart below shows the odds of achieving the various outcomes based on the number of D20s rolled (2, 3 or 4):
 
-PLOT GOES HERE
+![Alchemist odds](/IMG/alchemist.png)
