@@ -13,9 +13,9 @@ It can be seen that when it comes to rolling higher results, as long as the sum 
 
 ## High roll
 
-Many checks also make use of the highest result on either of the dice rolled, most commonly for calculating damage done when attacking in combat. Notably as the difficulty of the roll increases, so too does the average high roll of a success, due to needing to first pass the success threshold.
+Many checks also make use of the highest result on either of the dice rolled (most commonly for calculating damage done when attacking in combat). As the difficulty of the roll increases the odds of a hit decreases, but the high rolls of successes increases (due to needing to first pass the success threshold).
 
-Below is a plot of the average high roll when achieving a certain success threshold, for each combination of two dice:
+Below is a plot of the average high roll when attempting to achieve a certain success threshold (for each combination of two dice):
 ![High roll vs Target](/IMG/dice_dmg.png)
 
 This shows that although dice pairs with the same total are equivalent for ***success***, dice pairs with the highest value dice will perform better when it comes to their ***high roll***.
@@ -24,7 +24,7 @@ This shows that although dice pairs with the same total are equivalent for ***su
 
 ## Two weapon fighting
 
-Fabula Ultima allows you to play fight with the same type of one-handed weapon in each hand. In this case a separate attack is made for each weapon, but the highroll for each is always condidered 0 (simply dealing the weapons' base damage on a hit).
+Fabula Ultima allows you to fight with the same type of one-handed weapon in each hand. In this case a separate attack is made for each weapon, but the high roll for each is always considered 0 (simply dealing the weapons' base damage on a hit).
 
 The damage done by a conventional attack is:
 **chance to hit** * (**high roll** + **base weapon damage**)
@@ -42,9 +42,9 @@ There are now many factors:
 
 This creates a more complex plot where each dice combination has been separated out and the difference between using a single weapon and adding the high roll or making multiple attacks with two of said weapon are better. The Y axis represents:
 
-**single weapon average damage** - **two weapon fighting average damage**
+**two weapon fighting average damage** - **single weapon average damage** 
 
-i.e. positive numbers indicate how much more damage attacking twice with a weapon  does when compared to attacking with a single weapon
+i.e. positive numbers indicate how much more damage attacking two weapon fighting does when compared to attacking once with a single weapon
 
 ![Two weapon advantage](/IMG/two_weapon_fighting.png)
 
