@@ -20,6 +20,9 @@ Below is a plot of the average high roll when attempting to achieve a certain su
 
 This shows that although dice pairs with the same total are equivalent for ***success***, dice pairs with the highest value dice will perform better when it comes to their ***high roll***.
 
+Below is the plot for what the average HR wil be for all rolls PASSING a certain DC. You get a tail off as you approach the higher difficulties as the HR of crits is often low.
+![Successfiul High roll vs Target](/IMG/passing_hr_dmg.png)
+
 ---
 
 ## Two weapon fighting
