@@ -79,13 +79,13 @@ def generate_FabUlt_dice_hr(dice_sizes):
                     hr = 0
                     if i == j and i >= 6:
                         hr = i
-                        total = 26
+                        total = 25
                     elif i == 1 and j == 1:
                         continue
                     else:
                         hr = max(i, j)
                         total = i + j
-                    for k in range(total):
+                    for k in range(total + 1):
                         hr_accumulator[d1size][d2size][k] += hr
                         hr_count[d1size][d2size][k] += 1
 
