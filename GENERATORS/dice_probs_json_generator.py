@@ -98,7 +98,7 @@ def generate_FabUlt_dice_hr(dice_sizes):
                 if hr_count[d1size][d2size][i] > 0:
                     avg_hr_vs_dc[d1size][d2size][i] = hr_accumulator[d1size][d2size][i] / hr_count[d1size][d2size][i]
 
-    with open('../JSON/FabUlt_dice_avg_hr_by_dc.json', 'w') as file:
+    with open('../JSON/FabUlt_dice_avg_hr_passing_dc.json', 'w') as file:
         json.dump(avg_hr_vs_dc, file, indent=4)
 
 def generate_FabUlt_dice_avg_hr(dice_sizes_str, cumulative_avg_hr, cumulative_dice_odds):
@@ -123,7 +123,7 @@ if __name__ == '__main__':
 
     generate_FabUlt_dice_hr(DICE_SIZES)
 
-    with open('../JSON/FabUlt_dice_avg_hr_by_dc.json') as file:
+    with open('../JSON/FabUlt_dice_avg_hr_passing_dc.json') as file:
         cumulative_avg_hr = json.load(file)
     with open('../JSON/FabUlt_dice_cumulative.json') as file:
         cumulative_dice_odds = json.load(file)
