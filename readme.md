@@ -2,6 +2,14 @@
 
 This repo contains python tools to analyse and visualise the odds of the various dice rolls in the [Fabula Ultima](https://need.games/fabula-ultima/) JTTRPG
 
+## Summary
+
+In case you do not care to read the below explanations, here's the TL:DR
+- The sum of the dice sizes dictates odd of success (i.e. D6 + D10 is equivalent to D8 + D8)
+- Equivalent dice pairs with a larger dice are better when is come to achieving greater High rolls
+- A +1 to a roll is roughly equivalent to a 10% boost in odds of success
+- Increasing the size of a single dice used in a check of roughly equivalent to a 10% in odds of success
+
 ## Rolling a success
 
 Checks in Fabula Ultima use a combination of two of you characters' attributes. These attributes are in turn represented by a dice ranging from a six-sided D6 to a twelve sided D12. The score is simply the sum of the numbers rolled on those dice. In addition to this, double ones are considered an automatic failure (a fumble) and any double over a 6 is considered an automatic success (a critical).
@@ -11,16 +19,22 @@ This plot shows the odds of achieving a certain target based on the dice used in
 
 It can be seen that when it comes to rolling higher results, as long as the sum of the dice values are the same, then the odds are also roughly equivalent, i.e.: Rolling D8 + D8 is roughly equivalent to D6 + D10.
 
+If you look at the mid-range of the plot you can see that either:
+- Dropping the difficulty by 1
+- Moving up to the next set of dice above
+
+Gives an increased chace of success of **roughly** 10%
+
 ## High roll
 
-Many checks also make use of the highest result on either of the dice rolled (most commonly for calculating damage done when attacking in combat). As the difficulty of the roll increases the odds of a hit decreases, but the high rolls of successes increases (due to needing to first pass the success threshold).
+Many checks also make use of the highest result on either of the dice rolled (most commonly for calculating damage done when attacking in combat). As the difficulty of the roll increases the odds of a hit decreases, but the high rolls of successes increase (due to needing to first pass the success threshold).
 
 Below is a plot of the average high roll when attempting to achieve a certain success threshold (for each combination of two dice):
 ![High roll vs Target](/IMG/dice_dmg.png)
 
-This shows that although dice pairs with the same total are equivalent for ***success***, dice pairs with the highest value dice will perform better when it comes to their ***high roll***.
+This shows that although dice pairs with the same total are equivalent for ***success***, dice pairs with the highest value dice will perform better when it comes to their ***average high roll***.
 
-Below is the plot for what the average HR wil be for all rolls PASSING a certain DC. You get a tail off as you approach the higher difficulties as the HR of crits is often low.
+Below is the plot for what the average HR wil be for all rolls PASSING a certain DC. You see a tail off as you approach the higher difficulties as the HR of crits is often low.
 ![Successfiul High roll vs Target](/IMG/passing_hr_dmg.png)
 
 ---
