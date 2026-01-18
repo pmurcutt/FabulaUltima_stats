@@ -31,9 +31,9 @@ def plot_dice_combos_by_avg_hr_v_dc():
     plt.grid(which='minor', alpha=0.2)
     plt.xlim([0, 25])
     plt.ylim([0, 12])
-    plt.title("Target vs AVG HR")
+    plt.title("Target vs AVG PASSING HR")
     plt.xlabel("Target")
-    plt.ylabel("AVG HR")
+    plt.ylabel("AVG PASSING HR")
 
     plt.savefig('../IMG/passing_hr_dmg.png')
     plt.show()
